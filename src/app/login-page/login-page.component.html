@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS einbinden -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Background image für den oberen Bereich */
+    .header-section {
+      background-image: url('https://www.hennestrandcamping.de/media/13kecsql/kropsmassage-2.jpg'); /* Ersetze mit dem richtigen Pfad */
+      background-size: cover;
+      background-position: center;
+      height: 50vh; /* Bildhöhe auf etwa die Hälfte der Seite */
+      color: white; /* Textfarbe auf weiß setzen */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* Textfarbe für die "Login" und "New here?" Überschriften auf schwarz setzen */
+    .login-title, .new-here-title {
+      color: black; /* Textfarbe auf schwarz setzen */
+    }
+
+    .input-field {
+      color: #666; /* Textfarbe für Placeholder */
+    }
+    .input-field:focus {
+      color: black; /* Textfarbe, wenn der Benutzer beginnt zu tippen */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header mit Hintergrundbild und Titel -->
+  <div class="header-section text-center">
+    <h1>Start your Adventure</h1>
+  </div>
+
+  <!-- Hauptinhalt der Login-Seite -->
+  <div class="container mt-5">
+    <div class="row justify-content-between">
+      <!-- Login-Seite -->
+      <div class="col-md-5">
+        <h4 class="login-title mb-3">Login</h4>
+
+        <!-- Login Form -->
+        <form>
+          <!-- E-Mail Input -->
+          <div class="mb-3">
+            <input type="email" class="form-control input-field" id="loginEmail" placeholder="Email" required>
+          </div>
+          <!-- Password Input -->
+          <div class="mb-3">
+            <input type="password" class="form-control input-field" id="loginPassword" placeholder="Password" required>
+          </div>
+          <!-- Buttons für Login -->
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-dark w-50">Login</button>
+            <button type="button" class="btn btn-secondary w-50">Forgot password?</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- New here? -->
+      <div class="col-md-5">
+        <h4 class="new-here-title mb-3">New here?</h4>
+
+        <!-- Registrierung Form -->
+        <form>
+          <!-- Email Input für die Registrierung -->
+          <div class="mb-3">
+            <input type="email" class="form-control input-field" id="registerEmail" placeholder="Email" required>
+          </div>
+          <!-- Password Input für die Registrierung -->
+          <div class="mb-3">
+            <input type="password" class="form-control input-field" id="registerPassword" placeholder="Choose password" required>
+          </div>
+          <!-- Confirm Password Input -->
+          <div class="mb-3">
+            <input type="password" class="form-control input-field" id="confirmPassword" placeholder="Confirm password" required>
+          </div>
+          <!-- Button für Registrierung -->
+          <button type="submit" class="btn btn-dark w-100">Registration</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS und Popper.js einbinden -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
