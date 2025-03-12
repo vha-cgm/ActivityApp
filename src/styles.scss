@@ -1,4 +1,46 @@
+
 /* You can add global styles to this file, and also import other style files */
+
+h1{
+  color: #000;
+
+  /* Title */
+  font-family: Inter;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.08rem;
+}
+
+h2{
+  color: #000;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 3rem */
+}
+
+h3{
+  color: #828282 !important;
+  font-family: Inter !important;
+  font-size: 1.35rem !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 150% !important; /* 2.25rem */
+}
+
+p{
+  color: #828282;
+  /* Subheading */
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.25rem */
+}
+
 .header-section {
     background-image: url('https://www.hennestrandcamping.de/media/13kecsql/kropsmassage-2.jpg'); /* Ersetze mit dem richtigen Pfad */
     background-size: cover;
