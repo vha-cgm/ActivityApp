@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.header-section {
+    background-image: url('https://www.hennestrandcamping.de/media/13kecsql/kropsmassage-2.jpg'); /* Ersetze mit dem richtigen Pfad */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Bildhöhe auf etwa die Hälfte der Seite */
+    color: white; /* Textfarbe auf weiß setzen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Textfarbe für die "Login" und "New here?" Überschriften auf schwarz setzen */
+  .login-title, .new-here-title {
+    color: black; /* Textfarbe auf schwarz setzen */
+  }
+
+  .input-field {
+    color: #666; /* Textfarbe für Placeholder */
+  }
+  .input-field:focus {
+    color: black; /* Textfarbe, wenn der Benutzer beginnt zu tippen */
+  }

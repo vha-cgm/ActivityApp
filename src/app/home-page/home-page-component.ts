@@ -3,12 +3,12 @@ import { NavigationComponent } from "../navigation/navigation.component";
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
-  selector: 'app-about-page',
+  selector: 'app-home-page-component',
   standalone: true,
   imports: [NavigationComponent, FooterComponent],
-  templateUrl: './about-page.component.html',
-  styleUrl: './about-page.component.scss'
+  templateUrl: './home-page-component.html',
+  styleUrl: './home-page-component.scss'
 })
-export class AboutPageComponent {
+export class HomePageComponentComponent {
 
 }

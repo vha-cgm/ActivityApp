@@ -1,0 +1,31 @@
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white; /* Hintergrundfarbe des Footers */
+    padding: 50px 30px; /* Abstand oben und unten, links und rechts */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Abstand zwischen den Elementen */
+    align-items: center; /* Vertikale Ausrichtung */
+  }
+  
+  .left-text {
+    margin-left: 15px; /* Abstand zum linken Rand */
+  }
+  
+  .right-text {
+    margin-right: 15px; /* Abstand zum rechten Rand */
+  }
+  
+  .divider {
+    border: none; /* Keine Standard-Grenze */
+    height: 1px; /* Höhe der Trennlinie */
+    background-color: grey; /* Farbe der Trennlinie */
+    margin: 10px 20px; /* Abstand zur anderen Inhalte */
+  }
+  
