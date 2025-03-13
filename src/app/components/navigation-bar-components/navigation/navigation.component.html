@@ -1,14 +1,23 @@
 <div class="button-container">
-    <!-- Prüfe, ob der aktuelle Pfad 'navigation-component' ist -->
-    <ng-container *ngIf="currentRoute === 'home-page-component'; else homeAndLogout">
-        <!-- Home und Logout Buttons anzeigen -->
-        <app-about-button></app-about-button> <!-- Diesen Button musst du ggf. selbst erstellen -->
+    <div class="button-group">
+      <ng-container *ngIf="currentRoute === 'home-page-component'; else homeAndLogout">
+        <app-about-button></app-about-button>
         <app-logout-button></app-logout-button>
-    </ng-container>
-
-    <ng-template #homeAndLogout>
-        <!-- About und Logout Buttons anzeigen -->
+      </ng-container>
+  
+      <ng-template #homeAndLogout>
         <app-home-button></app-home-button>
         <app-logout-button></app-logout-button>
-    </ng-template>
-</div>
+      </ng-template>
+    </div>
+  
+    <!-- Profil-Icon (außer auf der Login-Seite) -->
+    <ng-container *ngIf="currentRoute !== 'login-page-component'">
+      <a routerLink="/my-profile" class="profile-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>
+      </a>
+    </ng-container>
+  </div>
+  
