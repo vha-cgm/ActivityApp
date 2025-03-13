@@ -1,0 +1,25 @@
+<h2>Contact me</h2>
+        <form>
+          <!-- Erste Reihe: Last Name und First Name -->
+          <div class="mb-3 row">
+            <div class="col-md-6">
+              <app-about-last-name-input />
+            </div>
+            <div class="col-md-6">
+              <app-about-first-name-input />
+            </div>
+          </div>
+      
+          <!-- Zweite Reihe: Email -->
+          <div class="mb-3">
+            <app-about-email-input />
+          </div>
+      
+          <!-- Dritte Reihe: Your Message (mehrzeilig) -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control input-field" id="message" rows="4" placeholder="Your message" required></textarea>
+          </div>
+      
+          <button type="submit" class="btn btn-dark w-100">Send</button>
+        </form>
