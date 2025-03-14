@@ -1,3 +1,4 @@
+import { ProfileIconComponent } from '../profile-icon/profile-icon.component';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AboutButtonComponent } from "../about-button/about-button.component";
@@ -8,7 +9,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [AboutButtonComponent, LogoutButtonComponent, HomeButtonComponent, CommonModule],
+  imports: [AboutButtonComponent, LogoutButtonComponent, HomeButtonComponent, CommonModule, ProfileIconComponent],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })

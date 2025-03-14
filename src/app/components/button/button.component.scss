@@ -3,12 +3,22 @@
     color: white;
   }
   
-  .btn-gray {
-    background-color: gray;
-    color: white;
+.btn-gray {
+  background-color: gray;
+  color: white;
   
-    &:hover {
-      background-color: rgb(146, 142, 142); // Dunkleres Grau beim Hover
-      color: white;
-    }
+  &:hover {
+    background-color: rgb(146, 142, 142); // Dunkleres Grau beim Hover
+    color: white;
   }
+}
+
+.btn-light-orange {
+  background-color: #E2AA7D;
+  color: white;
+  
+  &:hover {
+    background-color: rgb(146, 142, 142); // Dunkleres Grau beim Hover
+    color: white;
+  }
+}

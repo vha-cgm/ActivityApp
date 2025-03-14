@@ -10,7 +10,7 @@ import { NgClass } from '@angular/common';
 })
 export class ButtonComponent {
   @Input() text: string = 'Button';
-  @Input() color: 'dark' | 'gray' = 'dark';
+  @Input() color: 'dark' | 'gray' | 'light orange' = 'dark';
   @Input() width: string = 'w-100';
   @Input() type: 'button' | 'submit' = 'button';
 
