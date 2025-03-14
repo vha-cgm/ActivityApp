@@ -10,4 +10,9 @@ export class ProfileComponent {
   @Input() email: string = '';
   @Input() password: string = '';
   @Input() username?: string; // optionaler Benutzername
+
+  passwordCheck(){
+    
+    return true;
+  }
 }

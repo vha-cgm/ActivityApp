@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
+import { ProfileComponent } from '../../../profiles/profile/profile.component';
 
 @Component({
   selector: 'app-login-button',
@@ -9,6 +10,8 @@ import { ButtonComponent } from '../../button/button.component';
   styleUrl: './login-button.component.scss'
 })
 export class LoginButtonComponent extends ButtonComponent{
+  @Input() profile!: ProfileComponent;
+
   constructor(){
     super();
     this.text = 'Login';
@@ -17,6 +20,14 @@ export class LoginButtonComponent extends ButtonComponent{
     this.type = 'submit';
   }
 
-  login(){}
+  login(){
+    if(this.profile?.passwordCheck()){
+
+    }else{
+
+    }
+  }
+
+  
 
 }
