@@ -3,6 +3,8 @@ import { LoginPageComponent } from './components/login-page-components/login-pag
 import { NavigationComponent } from './components/navigation-bar-components/navigation/navigation.component';
 import { AboutPageComponent } from './components/about-page-components/about-page/about-page.component';
 import { HomePageComponentComponent } from './components/home-page-components/home-page/home-page-component';
+import { ActivityPageComponent } from './components/activity-page-components/activity-page/activity-page.component';
+import { FilterPageComponent } from './components/filter-page-components/filter-page/filter-page.component';
 
 export const routes: Routes = [
   {
@@ -20,5 +22,13 @@ export const routes: Routes = [
   {
     path: 'home-page-component',
     component: HomePageComponentComponent,
+  },  
+  {
+    path: 'activity-page-component',
+    component: ActivityPageComponent,
+  }, 
+  {
+    path: 'filter-page-component',
+    component: FilterPageComponent,
   },  
 ];
