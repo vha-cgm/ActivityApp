@@ -13,7 +13,7 @@ export class FilterYourWayToFunButtonComponent extends ButtonComponent{
   constructor(){
     super();
     this.text = 'Filter your way to fun!';
-    this.color = 'light-orange';
+    this.color = 'dark';
     this.width = 'w-100';
     this.type = 'submit';
   }

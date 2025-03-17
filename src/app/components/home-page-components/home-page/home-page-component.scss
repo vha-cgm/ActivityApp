@@ -11,13 +11,13 @@ body {
     height: 100vh;
 }
 .header {
-    background-image: url('https://s3-alpha-sig.figma.com/img/30b0/9370/7ca12fba0fe2f6df2f529b5753e8996f?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OdMo4SdsqBFtdyT0JU3vnBdq2Z5f0ZQbcHv1N7qwuQqND355jSc~Pz8LJOKQ0Sj0tH9GOoCzLYQV14QQAZptWbazoGKJv8X5pR1Pl56TBvnI12mUYTn2HP0J5c1R3GFV0Pf3B6pDJg8c60CJDlXSoEG2C-0XU-uieuSbeKr8qaPI~4YRAl98AMbthCiuqqh5UznLGPkALZtZiWTGnjJfwQOjo7OENH7hwKG3B4dyuMCFKbwZZRzLWVDo4lzqlTE1OLByTDsuR~siQnvpeNGno-n3xymNy9c5Qt1c5lEyTgTdZ1TyJFfabtYrX2FlyRnTyisQOaYhGR-bHN9ean1-rQ__');
+    background-image: url('https://www.flachau.com/fileadmin/_dc_processed_folder/a/e/csm_Bergwandern_in_Flachau_693d5c4c50.jpeg');
     background-size: cover;
     background-position: center;
     height: 35vh; /* Bild nimmt 35% der Bildschirmhöhe ein */
     padding: 20px;
     position: relative;
-    color: #D47528;
+    color: #000000;
 }
 .header-title {
     position: absolute;
@@ -37,3 +37,12 @@ body {
     bottom: 20px;
     right: 20px;
 }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Abstand zwischen den Karten */
+    margin-top: 40px;
+    opacity: 50%;
+  }
+  
