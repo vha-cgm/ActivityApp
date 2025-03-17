@@ -1,0 +1,18 @@
+.manager-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.spacer {
+    height: 50px; /* Fügt 50px Abstand nach der Navigation hinzu */
+  }
+  
+  
