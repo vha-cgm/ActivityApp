@@ -9,6 +9,11 @@ import { FilterPageComponent } from './components/filter-page-components/filter-
 export const routes: Routes = [
   {
     path: 'login-page-component',
+    redirectTo: '', // Weiterleitung zur Root-Route
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: LoginPageComponent,
   },
   {

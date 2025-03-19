@@ -1,19 +1,29 @@
 <div class="button-container">
-    <div class="button-group">
-      <ng-container *ngIf="currentRoute === 'home-page-component'; else homeAndLogout">
+  <div class="button-group">
+    <ng-container [ngSwitch]="currentRoute">
+      <!-- Home-Page: Zeigt About + Logout -->
+      <ng-container *ngSwitchCase="'home-page-component'">
         <app-about-button></app-about-button>
         <app-logout-button></app-logout-button>
       </ng-container>
-  
-      <ng-template #homeAndLogout>
+
+      <!-- About-Page: Zeigt Home + Logout -->
+      <ng-container *ngSwitchCase="'about-page-component'">
         <app-home-button></app-home-button>
         <app-logout-button></app-logout-button>
-      </ng-template>
-    </div>
-  
-    <!-- Profil-Icon (außer auf der Login-Seite) -->
-    <ng-container *ngIf="currentRoute !== 'login-page-component'">
-      <app-profile-icon />
+      </ng-container>
+
+      <!-- Standard: Zeigt Home + About + Logout -->
+      <ng-container *ngSwitchDefault>
+        <app-home-button></app-home-button>
+        <app-about-button></app-about-button>
+        <app-logout-button></app-logout-button>
+      </ng-container>
     </ng-container>
   </div>
-  
+
+  <!-- Profil-Icon (nur wenn nicht auf der Login-Seite) -->
+  <ng-container *ngIf="currentRoute !== 'login-page-component' && currentRoute !== ''">
+    <app-profile-icon />
+  </ng-container>
+</div>

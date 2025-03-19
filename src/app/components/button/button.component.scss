@@ -1,3 +1,14 @@
+button {
+  display: flex; /* Stellt sicher, dass der Button Inhalt + Padding richtig anzeigt */
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Falls `width: 100%` den Button zu groß macht, nimm `auto` */
+  min-width: 80px; /* Setze eine Mindestbreite für bessere Optik */
+  padding: 0.5rem 1rem; /* Korrigiert das Innenpadding */
+  border-radius: 8px; /* Falls die Ecken zu stark abgerundet sind */
+}
+
+
 .btn-dark {
     background-color: black;
     color: white;
