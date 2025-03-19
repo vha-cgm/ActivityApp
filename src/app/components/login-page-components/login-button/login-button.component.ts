@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
 import { ProfileComponent } from '../../../profiles/profile/profile.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-button',
@@ -12,7 +13,7 @@ import { ProfileComponent } from '../../../profiles/profile/profile.component';
 export class LoginButtonComponent extends ButtonComponent{
   @Input() profile!: ProfileComponent;
 
-  constructor(){
+  constructor(private router: Router){
     super();
     this.text = 'Login';
     this.color = 'dark';
@@ -26,6 +27,8 @@ export class LoginButtonComponent extends ButtonComponent{
     }else{
 
     }
+
+    this.router.navigate(['/home-page-component']);
   }
 
   

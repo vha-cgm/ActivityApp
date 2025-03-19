@@ -6,8 +6,10 @@
     <h1>Activity Manager</h1>
     <h3>Add, Edit, Delete or Get an Overview. Click on an activity to inspect the details or to edit.</h3>
     
-    <app-add-button></app-add-button>
-  
+    <div class="button-container">
+      <app-add-button></app-add-button>
+  </div>
+    
     <div class="grid-container">
       <app-activity-card 
         *ngFor="let activity of activities; let i = index"

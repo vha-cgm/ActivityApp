@@ -4,8 +4,9 @@ import { ButtonComponent } from '../../button/button.component';
 @Component({
   selector: 'app-add-button',
   standalone: true,
-  template: `<button class="add-btn" (click)="onAdd()">Add</button>`,
-  styleUrl: './add-button.component.scss'
+  imports: [ButtonComponent],
+  templateUrl: './add-button.component.html',
+  styleUrl: './add-button.component.scss',
 })
 export class AddButtonComponent extends ButtonComponent{
   @Output() add = new EventEmitter<void>();
