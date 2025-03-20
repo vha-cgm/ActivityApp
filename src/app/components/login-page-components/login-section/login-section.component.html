@@ -1,6 +1,7 @@
-<h4 class="login-title mb-3">Login</h4>
+<h4 class="login-title mb-3" *ngIf="!forgotPassword">Login</h4>
 
-<form id="loginForm" class="d-grid gap-3">
+<!-- Normales Login-Formular, falls forgotPassword false ist -->
+<form id="loginForm" class="d-grid gap-3" *ngIf="!forgotPassword">
   <!-- E-Mail Input -->
   <div class="mb-3">
     <input type="email" class="form-control input-field w-100" id="loginEmail" placeholder="Email" required>
@@ -12,6 +13,9 @@
   <!-- Buttons für Login -->
   <div class="d-flex gap-2">
     <app-login-button class="flex-fill"></app-login-button>
-    <app-forgot-password-button class="flex-fill"></app-forgot-password-button>
+    <app-forgot-password-button class="flex-fill" (click)="forgotPassword = true"></app-forgot-password-button>
   </div>
 </form>
+
+<!-- Forgot Password Sektion, falls forgotPassword true ist -->
+<app-forgot-password-section *ngIf="forgotPassword" (backToLogin)="forgotPassword = false"></app-forgot-password-section>

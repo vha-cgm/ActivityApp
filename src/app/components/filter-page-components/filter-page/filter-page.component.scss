@@ -1,0 +1,35 @@
+.manager-container {
+    text-align: left;
+    padding: 20px;
+    width: 90%;
+    max-width: 10000px; /* Begrenzt die Breite für eine bessere Struktur */
+    margin: 0 auto; /* Sorgt dafür, dass der Container mittig bleibt */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .spacer {
+    height: 50px; /* Fügt 50px Abstand nach der Navigation hinzu */
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: flex-start; /* Damit der Button links startet */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Jetzt linksbündig statt zentriert */
+    width: 100%;
+  }
+  
+  app-add-button {
+    flex-grow: 1;
+  }
+  

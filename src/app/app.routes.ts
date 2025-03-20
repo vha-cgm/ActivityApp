@@ -5,6 +5,7 @@ import { AboutPageComponent } from './components/about-page-components/about-pag
 import { HomePageComponentComponent } from './components/home-page-components/home-page/home-page-component';
 import { ActivityPageComponent } from './components/activity-page-components/activity-page/activity-page.component';
 import { FilterPageComponent } from './components/filter-page-components/filter-page/filter-page.component';
+import { ProfilePageComponent } from './components/profile-page-components/profile-page/profile-page.component';
 
 export const routes: Routes = [
   {
@@ -36,4 +37,8 @@ export const routes: Routes = [
     path: 'filter-page-component',
     component: FilterPageComponent,
   },  
+  {
+    path: 'profile-page-component',
+    component: ProfilePageComponent,
+  },
 ];

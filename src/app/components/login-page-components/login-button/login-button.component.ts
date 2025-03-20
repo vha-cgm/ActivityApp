@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../../button/button.component';
-import { ProfileComponent } from '../../../profiles/profile/profile.component';
+import { ProfileComponent } from '../../profile-page-components/profile/profile.component';
 import { Router } from '@angular/router';
 
 @Component({
